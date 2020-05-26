@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PocketModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Owner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="Int64" />
+    <Property Name="ModifiedBy" Type="Int64" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int64" />
+    <Property Name="ModifiedBy" Type="Int64" />
+  </EntityType>
+  <EntityContainer Name="PocketDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Owners" EntityType="Self.Owner" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <FunctionImport Name="GetAllOrderDetails_sp" ReturnType="Collection(PocketModel.GetAllOrderDetails_sp_Result)" />
+    <FunctionImport Name="GetAllOrderMasters_sp" ReturnType="Collection(PocketModel.GetAllOrderMasters_sp_Result)" />
+    <FunctionImport Name="GetAllOwners_sp" ReturnType="Collection(PocketModel.GetAllOwners_sp_Result)" />
+    <FunctionImport Name="GetAllProducts_sp" ReturnType="Collection(PocketModel.GetAllProducts_sp_Result)" />
+    <FunctionImport Name="GetOrderDetail" ReturnType="Collection(PocketModel.GetOrderDetail_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetOrderMaster_sp" ReturnType="Collection(PocketModel.GetOrderMaster_sp_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetOwnerById_sp" ReturnType="Collection(PocketModel.GetOwnerById_sp_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetProduct_sp" ReturnType="Collection(PocketModel.GetProduct_sp_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="InsertOwner_sp">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="IsActive" Mode="In" Type="Boolean" />
+      <Parameter Name="CreatedBy" Mode="In" Type="Int64" />
+      <Parameter Name="ModifiedBy" Mode="In" Type="Int64" />
+      <Parameter Name="CreatedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ModifiedDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateOwnerById_sp">
+      <Parameter Name="Id" Mode="In" Type="Int64" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="IsActive" Mode="In" Type="Boolean" />
+      <Parameter Name="CreatedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ModifiedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="CreatedBy" Mode="In" Type="Int64" />
+      <Parameter Name="ModifiedBy" Mode="In" Type="Int64" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetAllOrderDetails_sp_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="Int64" Name="OrderMasterId" Nullable="true" />
+    <Property Type="Int64" Name="ProductId" Nullable="true" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetAllOrderMasters_sp_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="true" />
+    <Property Type="Int64" Name="ModifiedBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetAllOwners_sp_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="true" />
+    <Property Type="Int64" Name="ModifiedBy" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetAllProducts_sp_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Price" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="true" />
+    <Property Type="Int64" Name="ModifiedBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetOrderDetail_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="Int64" Name="OrderMasterId" Nullable="true" />
+    <Property Type="Int64" Name="ProductId" Nullable="true" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetOrderMaster_sp_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="true" />
+    <Property Type="Int64" Name="ModifiedBy" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetOwnerById_sp_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="true" />
+    <Property Type="Int64" Name="ModifiedBy" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetProduct_sp_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Price" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="true" />
+    <Property Type="Int64" Name="ModifiedBy" Nullable="true" />
+  </ComplexType>
+</Schema>

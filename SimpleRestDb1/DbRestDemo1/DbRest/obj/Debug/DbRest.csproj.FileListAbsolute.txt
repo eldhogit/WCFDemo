@@ -1,0 +1,24 @@
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\bin\DbRest.dll.config
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\bin\DbRest.dll
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\bin\DbRest.pdb
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\bin\EntityFramework.dll
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\bin\EntityFramework.SqlServer.dll
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\bin\EntityFramework.xml
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\bin\EntityFramework.SqlServer.xml
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\obj\Debug\DbRest.csproj.CoreCompileInputs.cache
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\obj\Debug\DbRest.csproj.CopyComplete
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\obj\Debug\DbRest.dll
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\obj\Debug\DbRest.pdb
+C:\Users\eldho\source\repos\DbRestDemo1\DbRest\obj\Debug\DbRest.csprojResolveAssemblyReference.cache
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\bin\DbRest.dll.config
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\bin\DbRest.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\bin\DbRest.pdb
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\bin\EntityFramework.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\bin\EntityFramework.SqlServer.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\bin\EntityFramework.xml
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\bin\EntityFramework.SqlServer.xml
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\obj\Debug\DbRest.csprojResolveAssemblyReference.cache
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\obj\Debug\DbRest.csproj.CoreCompileInputs.cache
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\obj\Debug\DbRest.csproj.CopyComplete
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\obj\Debug\DbRest.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleRestDb1\DbRestDemo1\DbRest\obj\Debug\DbRest.pdb

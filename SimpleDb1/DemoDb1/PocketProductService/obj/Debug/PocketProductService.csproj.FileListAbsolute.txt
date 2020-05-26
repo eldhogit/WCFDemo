@@ -1,0 +1,12 @@
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\bin\PocketProductService.dll.config
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\bin\PocketProductService.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\bin\PocketProductService.pdb
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\bin\EntityFramework.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\bin\EntityFramework.SqlServer.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\bin\EntityFramework.xml
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\bin\EntityFramework.SqlServer.xml
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\obj\Debug\PocketProductService.csprojResolveAssemblyReference.cache
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\obj\Debug\PocketProductService.csproj.CoreCompileInputs.cache
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\obj\Debug\PocketProductService.csproj.CopyComplete
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\obj\Debug\PocketProductService.dll
+E:\Eldho\C# Programs\WCF\2020\SimpleDb1\DemoDb1\PocketProductService\obj\Debug\PocketProductService.pdb

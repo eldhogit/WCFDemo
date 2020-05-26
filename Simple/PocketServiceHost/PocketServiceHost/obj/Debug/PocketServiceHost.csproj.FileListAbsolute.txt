@@ -1,0 +1,7 @@
+E:\Eldho\C# Programs\WCF\2020\PocketServiceHost\PocketServiceHost\bin\PocketServiceHost.dll.config
+E:\Eldho\C# Programs\WCF\2020\PocketServiceHost\PocketServiceHost\bin\PocketServiceHost.dll
+E:\Eldho\C# Programs\WCF\2020\PocketServiceHost\PocketServiceHost\bin\PocketServiceHost.pdb
+E:\Eldho\C# Programs\WCF\2020\PocketServiceHost\PocketServiceHost\obj\Debug\PocketServiceHost.csprojResolveAssemblyReference.cache
+E:\Eldho\C# Programs\WCF\2020\PocketServiceHost\PocketServiceHost\obj\Debug\PocketServiceHost.csproj.CoreCompileInputs.cache
+E:\Eldho\C# Programs\WCF\2020\PocketServiceHost\PocketServiceHost\obj\Debug\PocketServiceHost.dll
+E:\Eldho\C# Programs\WCF\2020\PocketServiceHost\PocketServiceHost\obj\Debug\PocketServiceHost.pdb
